@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Exercise 3</title>
+
+    <!-- Adding CSS Style here -->
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            align-items: stretch;
+        }
+
+        .column {
+            background: goldenrod;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .mybutton {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- adding Containers-->
+    <div class="container">
+        <!-- Added columns in the container -->
+        <div class="column" id="column1">
+            <h1 id="heading1">Hello</h1>
+            <!-- Added button -->
+            <button class="mybutton1" onclick="changeColor1()">Change me</button>
+        </div>
+
+        <!-- Added columns in the container -->
+        <div class="column" id="column2">
+            <h1 id="heading2">Hello</h1>
+            <!-- Added button -->
+            <button class="mybutton2" onclick="changeColor2()">Change me</button>
+        </div>
+    </div>
+
+    <!-- Java Script function starts here -->
+    <script>
+        function changeColor1() {
+
+            // Assigning desired color to a variable
+            var wantingColor = "#FF5746";
+            // Assigning variable to the ID atteributes of first Column
+            var column1Element = document.getElementById("column1");
+
+             // Setting up the background color to the color we want
+            column1Element.style.backgroundColor = wantingColor;
+            // Changing the text content of heading 2
+            var heading1Element = document.getElementById("heading1");
+
+            heading1Element.textContent = "Color is Changed !!";
+        }
+
+        function changeColor2() {
+
+            // Assigning desired color to a variable
+            var wantingColor = "#FF5886";
+             // Assigning variable to the ID atteributes of first Column
+            var column2Element = document.getElementById("column2");
+
+            // Setting up the background color to the color we want
+            column2Element.style.backgroundColor = wantingColor;
+             // Changing the text content of heading 2
+            var heading2Element = document.getElementById("heading2");
+
+            heading2Element.textContent = "Color is Changed !!";
+        }
+    </script>
+</body>
+</html>
