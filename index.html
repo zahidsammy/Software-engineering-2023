@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Your Page Title</title>
+        <meta name="description" content="A brief description of your page">
+        <meta name="keywords" content="keywords, separated, by, commas">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="form.html">Go to Page 2</a>
+        </header>
+        <h1>My HTML learning journey</h1>
+        <img src="https://picsum.photos/200/300" alt="Placeholder Image" />
+
+        <article>
+            <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+            <div>avocado</div>
+            <div>Kiwifruit</div>
+            <div>Mango</div>
+
+            <br> <!-- Add a line break to separate divs and spans -->
+
+            <span>Milk</span>
+            <span>Tea</span>
+            <span>Yogurt</span>
+
+            <p>
+                p represents paragraph
+            </p>
+            <pre>
+                Text in         a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks
+            </pre>
+        </article>
+
+        <article>
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                }
+            </style>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First header</th>
+                        <th>Second header</th>
+                        <th colspan="2">Third header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First cell - first row</td>
+                        <td>Second cell - first row</td>
+                        <td>Third cell - first row</td>
+                    </tr>
+                    <tr>
+                        <td>First cell - second row</td>
+                        <td>Second cell - second row</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Cell spanning two rows</td>
+                        <td>Second cell - third row</td>
+                    </tr>
+                    <tr>
+                        <td>Second cell - fourth row</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <video autoplay width="250">
+            <source src="your-video-source.mp4" type="video/mp4">
+            <source src="your-video-source.webm" type="video/webm">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <audio autoplay>
+            <source src="your-audio-source.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+    </body>
+</html>
+

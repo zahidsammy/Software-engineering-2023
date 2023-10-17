@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <a href="">Form</a>
+
+    <style>
+      
+      header {
+        margin: 20px;
+        color: blue;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Link to the Home page -->
+        <a href="/">Home</a>
+      </nav>
+    </header>
+    <main>  
+        <form method="POST" action="http://localhost:3000/profile">
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+            </div>
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for "female">Female</label>
+            </div>
+
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            
+            <button type="submit">Submit Form</button>
+        </form>
+    </main>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>
