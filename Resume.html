@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Your page description here">
+    <meta name="keywords" content="keywords, for, your, page">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#RRGGBB">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Your page description for social media">
+    <meta property="og:image" content="http://example.com/your-image.jpg">
+    <meta property="og:url" content="http://example.com/your-page-url">
+
+    
+    <link rel="icon" type="image/jpeg" href="IMG-9846.JPG">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: white;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+        }
+
+        .container .left_side {
+            position: relative;
+            background: darkcyan;
+            padding: 30px;
+        }
+
+        .container .right_side {
+            position: relative;
+            background: lightgrey;
+            padding: 30px;
+        }
+
+        .profile {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+        }
+
+        .profile .image {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile .image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .Experience {
+            margin-bottom: 100px; 
+        }
+    </style>
+
+    <title>Resume Webpage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profile">
+                <div class="image">
+                    <img src="IMG-9846.JPG" alt="Your Profile Image">
+                </div>
+                <h1>Ahmed Zahid Akhundzada</h1>
+                <p>Based in New Zealand</p>
+                <p>zahidsammy95@gmail.com</p>
+                <p>0224179927</p>
+            </div>
+        </div>
+
+        <div class="right_side">
+            <div class="Experience">
+                <h2>Job History</h2>
+                <h3>ICT Customer Support - Wireless Nation (2023)</h3>
+                <h3>ICT Customer Support - One NZ (2022-2023)</h3>
+                <h3>Repair Technician - Omnitech (2019-2021)</h3>
+                <h3>IT Support - University of Otago (2018)</h3>
+            </div>
+
+            <div class="Education">
+                <h2>Education</h2>
+                <h3>Bachelor of Science - University of Otago (2018-2022)</h3>
+                <h3>Software Engineering - Institute of Data (2023)</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
